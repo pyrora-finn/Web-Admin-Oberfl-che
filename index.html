@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Interface</h1>
+        
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <form id="form">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Einloggen</button>
+            </form>
+            <p id="error-message" class="error"></p>
+        </div>
+        
+        <div id="dashboard" class="hidden">
+            <h2>Dashboard</h2>
+            <p>Willkommen im Admin-Dashboard!</p>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
